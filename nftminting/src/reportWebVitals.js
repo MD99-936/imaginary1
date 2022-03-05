@@ -38,7 +38,8 @@ module.exports = function override (config, env) {
   console.log('override')
   let loaders = config.resolve
   loaders.fallback = {
-      "url":false,
+      "url": false,
+      "assert": false,
       "fs": false,
       "tls": false,
       "net": false,
