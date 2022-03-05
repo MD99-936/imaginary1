@@ -6,25 +6,6 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
 
-const isMobileDevice = useMediaQuery({
-  query: "(min-device-width: 480px)",
-});
-
-const isTabletDevice = useMediaQuery({
-  query: "(min-device-width: 768px)",
-});
-
-const isLaptop = useMediaQuery({
-  query: "(min-device-width: 1024px)",
-});
-
-const isDesktop = useMediaQuery({
-  query: "(min-device-width: 1200px)",
-});
-
-const isBigScreen = useMediaQuery({
-  query: "(min-device-width: 1201px )",
-});
 
 export const StyledButton = styled.button`
 width: 260px;
@@ -240,13 +221,6 @@ function App() {
 
   return (
     <s.Screen>
-      {isMobileDevice && <Mobile />}
-    {isTabletDevice && <>
-    <TabletMobile />
-    {isDesktop && <Desktop />}
-    {isLaptop && <Laptop />}
-    {isBigScreen && <BigScreen />}
-    </>}
       <s.Container
         flex={1}
         ai={"center"}
@@ -430,9 +404,9 @@ function App() {
          
         </s.Container>
             <span>
-              <a href="https://www.instagram.com/theimaginaryones/" target="_blank" rel="noopener noreferrer"><img alt="insta" src="../config/images/insta.jpg" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
-              <a><img alt="dis" src="../config/images/discord.jpg" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
-              <a href="https://twitter.com/Imaginary_Ones" target="_blank" rel="noopener noreferrer"><img alt="tweet" src="../config/images/twitter.jpg" style={{width: "40px", height: "40px", margin:"10px"}}></img></a>
+              <a href="https://www.instagram.com/theimaginaryones/" target="_blank" rel="noopener noreferrer"><img alt="insta" src="../config/images/insta.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
+              <a><img alt="dis" src="../config/images/discord.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
+              <a href="https://twitter.com/Imaginary_Ones" target="_blank" rel="noopener noreferrer"><img alt="tweet" src="../config/images/twitter.png" style={{width: "40px", height: "40px", margin:"10px"}}></img></a>
             </span>             
       </s.Container>
     </s.Screen>
