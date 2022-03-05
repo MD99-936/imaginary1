@@ -232,7 +232,7 @@ function App() {
 
   return (
     <s.Screen>
-      <Desktop>
+      
         <Mobile>
       <s.Container
         flex={1}
@@ -423,7 +423,6 @@ function App() {
             </span>             
       </s.Container>
       </Mobile>
-      </Desktop>
     </s.Screen>
   );
 }
