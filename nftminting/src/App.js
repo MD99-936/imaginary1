@@ -4,18 +4,6 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
-import { useMediaQuery } from "react-responsive";
-
-
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 })
-  return isDesktop ? children : null
-}
-
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
 
 
 export const StyledButton = styled.button`
@@ -232,8 +220,6 @@ function App() {
 
   return (
     <s.Screen>
-      
-        <Mobile>
       <s.Container
         flex={1}
         ai={"center"}
@@ -422,7 +408,6 @@ function App() {
               <a href="https://twitter.com/Imaginary_Ones" target="_blank" rel="noopener noreferrer"><img alt="tweet" src="../config/images/twitter.png" style={{width: "40px", height: "40px", margin:"10px"}}></img></a>
             </span>             
       </s.Container>
-      </Mobile>
     </s.Screen>
   );
 }
