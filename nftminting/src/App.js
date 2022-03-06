@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
+const truncate = (input, len) =>
+  input.length > len ? `${input.substring(0, len)}...` : input;
 
 export const StyledButton = styled.button`
 width: 260px;
@@ -228,6 +230,8 @@ function App() {
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
         </a>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
