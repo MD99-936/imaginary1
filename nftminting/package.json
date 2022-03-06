@@ -36,9 +36,6 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build"
   },
-  "browser": {
-    "crypto": false
-  },
   "browserslist": {
     "production": [
       ">0.2%",
