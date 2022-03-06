@@ -87,7 +87,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Install Metamask."));
+      dispatch(connectFailed("For Security Reasons open the URL using your MetaMask App Browser or just use the Desktop version."));
     }
   };
 };
