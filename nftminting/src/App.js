@@ -18,7 +18,6 @@ border-radius: 50px;
 border: 3px solid darkblue;
 color: darkblue;
 font-size: 20px;
-font-family: cursive;
 position: relative;
 overflow: hidden;
 background: transparent;
