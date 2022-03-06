@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.25,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/",
+  "MARKETPLACE_LINK": "https://opensea.io",
   "SHOW_BACKGROUND": true
 }
