@@ -236,6 +236,8 @@ function App() {
         <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
         <s.SpacerSmall />
         <s.SpacerLarge />
           <s.SpacerMedium/>
@@ -403,7 +405,7 @@ function App() {
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
-              <div style={{alignItems: "center", margin: "0 auto"}}>
+              <div>
               <a href="https://www.instagram.com/theimaginaryones/" target="_blank" rel="noopener noreferrer"><img alt="insta" src="../config/images/insta.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
               <a><img alt="dis" src="../config/images/discord.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
               <a href="https://twitter.com/Imaginary_Ones" target="_blank" rel="noopener noreferrer"><img alt="tweet" src="../config/images/twitter.png" style={{width: "40px", height: "40px", margin:"10px"}}></img></a>
