@@ -1,6 +1,6 @@
-// constants
 import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
+import detectEthereumProvider from '@metamask/detect-provider'
 // log
 import { fetchData } from "../data/dataActions";
 
@@ -49,7 +49,7 @@ export const connect = () => {
     });
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
-    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+    const metamaskIsInstalled = ethereum && ethereum.isMetaMask && detectEthereumProvider();
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
@@ -60,7 +60,7 @@ export const connect = () => {
         const networkId = await ethereum.request({
           method: "net_version",
         });
-        if (networkId === CONFIG.NETWORK.ID) {
+        if (networkId == CONFIG.NETWORK.ID) {
           const SmartContractObj = new Web3EthContract(
             abi,
             CONFIG.CONTRACT_ADDRESS
@@ -87,7 +87,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Install Metamask."));
+      dispatch(connectFailed("For Security Reasons, Open the URL using your MetaMask App Browser, or just use the Desktop version."));
     }
   };
 };
