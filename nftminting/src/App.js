@@ -87,7 +87,7 @@ export const ResponsiveWrapper = styled.div`
   justify-content: stretched;
   align-items: stretched;
   width: 100%;
-  @media (min-width: 700px) {
+  @media (min-width: 767px) {
     flex-direction: row;
   }
 `;
@@ -402,14 +402,14 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-         
-        </s.Container>
-            <span style={{align: "center"}}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
+              <div style={{alignItems: "center", margin: "0 auto"}}>
               <a href="https://www.instagram.com/theimaginaryones/" target="_blank" rel="noopener noreferrer"><img alt="insta" src="../config/images/insta.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
               <a><img alt="dis" src="../config/images/discord.png" style={{width: "40px", height: "40px",margin:"10px"}}></img></a>
               <a href="https://twitter.com/Imaginary_Ones" target="_blank" rel="noopener noreferrer"><img alt="tweet" src="../config/images/twitter.png" style={{width: "40px", height: "40px", margin:"10px"}}></img></a>
-            </span>             
+            </div>             
+        </s.Container>
+                         
       </s.Container>
     </s.Screen>
   );
