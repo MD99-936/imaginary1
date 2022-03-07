@@ -306,7 +306,7 @@ function App() {
                         color: "darkblue", fontSize: 23,fontWeight: "bold"
                       }}
                     >
-                      Limited public sale
+                      Limited public sale up to 1500
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
