@@ -314,7 +314,6 @@ function App() {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
-                        getCurrentWalletConnected();
                       }}
                     >
                      Mint

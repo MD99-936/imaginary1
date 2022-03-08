@@ -54,7 +54,7 @@ export const connect = () => {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
       try {
-        const accounts = await window.ethereum.request({
+        const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
         const networkId = await ethereum.request({
@@ -87,28 +87,11 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("For Security Reasons open the URL using your MetaMask App Browser or just use the Desktop version."));
+      dispatch(connectFailed("For Security Reasons open the URL using the built-in browser found in the MetaMask mobile app."));
     }
   };
 };
 
-export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
-    try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
-      });
-    } catch (err) {
-      return {
-        
-      };
-    }
-  } else {
-    return {
-      
-    };
-  }
-};
 
 export const updateAccount = (account) => {
   return async (dispatch) => {
