@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
+import { connect, getCurrentWalletConnected } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
@@ -314,6 +314,7 @@ function App() {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
+                        getCurrentWalletConnected();
                       }}
                     >
                      Mint
