@@ -87,7 +87,9 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("For Security Reasons open the URL using the built-in browser found in the MetaMask mobile app."));
+      window.location.assign(
+        "https://metamask.app.link/dapp/imaginaryones.netlify.app"
+        );
     }
   };
 };
