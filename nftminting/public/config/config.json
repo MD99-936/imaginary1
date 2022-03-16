@@ -10,7 +10,7 @@
   "SYMBOL": "IO NFT",
   "MAX_SUPPLY": 2080,
   "WEI_COST": 250000000000000000,
-  "DISPLAY_COST": 0.25,
+  "DISPLAY_COST": 0.2,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io",
