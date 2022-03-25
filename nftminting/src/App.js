@@ -229,14 +229,14 @@ function App() {
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
         </a>
+        <s.SpacerMedium />
+        <s.SpacerMedium />
         <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
         <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
+        <s.SpacerMedium />
         <s.SpacerSmall />
         <s.SpacerLarge />
           <s.SpacerMedium/>
