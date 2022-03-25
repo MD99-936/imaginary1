@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x8c762C882c4F0448FEEAC900Bc2e8ffB4223544f",
-  "SCAN_LINK": "https://polygonscan.com/token/0x8c762C882c4F0448FEEAC900Bc2e8ffB4223544f",
+  "CONTRACT_ADDRESS": "0x7B63b5b27f51db11674e4D1be87954Da89475518",
+  "SCAN_LINK": "https://polygonscan.com/token/0x7B63b5b27f51db11674e4D1be87954Da89475518",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
@@ -9,8 +9,8 @@
   "NFT_NAME": "Imaginary Ones",
   "SYMBOL": "IO NFT",
   "MAX_SUPPLY": 2080,
-  "WEI_COST": 200000000000000000,
-  "DISPLAY_COST": 0.2,
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io",
