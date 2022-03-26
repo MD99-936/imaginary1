@@ -225,26 +225,18 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 1, backgroundColor: "white", width: "100%", height: "100%"  }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bgg.png" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/sequence11.gif" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
         </a>
         <s.SpacerMedium />
         <s.SpacerMedium />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
         <s.SpacerMedium />
-        <s.SpacerSmall />
         <s.SpacerLarge />
-          <s.SpacerMedium/>
-          <s.SpacerMedium/>
-          <s.SpacerMedium/>
-          <s.SpacerMedium/>
-          <s.SpacerMedium/>
-          <s.SpacerMedium/>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+          <s.SpacerSmall/>
           <s.SpacerSmall/>
           <s.SpacerMedium/>
           <s.SpacerMedium/>
@@ -253,6 +245,7 @@ function App() {
           <ResponsiveWrapper flex={1}  test>
           <s.Container flex={1} ai={"center"}>
           </s.Container>
+          
           <s.Container
             flex={2}
             jc={"center"}
